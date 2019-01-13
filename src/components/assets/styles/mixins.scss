@@ -1,0 +1,81 @@
+/*================================================================
+  1. Responsive
+
+  Usage
+  ---------
+	.sidebar {
+	  width: 60%;
+	  float: left;
+	  margin: 0 2% 0 0;
+	  @include bp-small {
+	    width: 100%;
+	    float: none;
+	    margin: 0;
+	  }
+	}
+
+	Output:
+	----------
+	.sidebar {
+	  width: 60%;
+	  float: left;
+	  margin: 0 2% 0 0;
+	  @media only screen and (max-width: 30){
+	    .sidebar{width: 100%; float: none; margin: 0;}
+	  }
+	}
+==================================================================*/
+@mixin bp-large {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin bp-medium {
+    @media only screen and (min-width: 321px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin bp-small {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+
+/*================================================================
+  2. Font
+==================================================================*/
+@mixin font-properties(
+    $font-family: '',
+    $font-size: 14px,
+    $font-weight: normal,
+    $font-style: normal,
+    $font-stretch: normal,
+    $line-height: normal,
+    $letter-spacing: normal,
+    $color: #9b9b9b) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+
+/*================================================================
+  2. butyon
+==================================================================*/
+@mixin common-btn($bgColor: $brand-blue, $color: $white ) {
+    height: 40px;
+    border: none;
+    border-radius: 26px;
+    outline: none;
+    background-color: $bgColor;
+    color: $color; 
+    cursor: pointer;
+}

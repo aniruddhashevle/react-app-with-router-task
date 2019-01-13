@@ -1,6 +1,5 @@
 import React from 'react';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
 import ListItemLink from '../ListItemLink';
 
 const MenuList = ({ menuConfig = [] }) =>
@@ -14,12 +13,10 @@ const MenuList = ({ menuConfig = [] }) =>
                 route,
                 showDivider
             }) =>
-                <ListItem divider={showDivider}>
-                    <ListItemLink href={route} id={id} title={title}>
-                        <h2 className="title">{title}</h2>
-                        <p className="sub-title">{subTitle}</p>
-                    </ListItemLink>
-                </ListItem>
+                <ListItemLink href={route} id={id} title={title} divider={showDivider}>
+                    <h2 className="title">{title}</h2>
+                    <p className="sub-title">{subTitle}</p>
+                </ListItemLink>
 
             )
         }

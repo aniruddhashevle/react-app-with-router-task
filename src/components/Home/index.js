@@ -4,6 +4,7 @@ import MenuList from '../MenuList';
 
 const Home = () =>
     <div className="home-wrapper">
+        <h1>Konigle</h1>
         <MenuList menuConfig={HOME_MENUS} />
     </div>
 

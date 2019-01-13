@@ -6,10 +6,10 @@ import NoMatch from '../NoMatch';
 
 
 const AppRoutes = ({ menuConfig = [] }) =>
-    menuConfig && menuConfig.length &&
     <Switch>
         <Route exact path="/" component={Home} />
         {
+            menuConfig && menuConfig.length &&
             menuConfig.map(({
                 route,
                 component
