@@ -1,0 +1,21 @@
+@import '../assets/styles/mixins.scss';
+@import '../assets/styles/variables.scss';
+
+.home-wrapper {
+    .menu-list,
+    .menu-list li { padding: 0; }
+    .menu-list li {
+        a {
+            display: block;
+            padding: 20px 0px;
+            .title {
+                margin: 0 0 20px 0;
+                @include font-properties($font-size: 36px, $color: $brandTitleColor);
+            }
+            .description {
+                margin: 0;
+                @include font-properties($font-size: 20px, $color: $brandSubTitleColor);
+            }
+        }
+    }
+}

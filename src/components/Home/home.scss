@@ -1,0 +1,8 @@
+@import '../assets//styles/variables.scss';
+@import '../assets//styles/mixins.scss';
+
+.brand-logo {
+    padding-bottom: 20px;
+    margin: 0;
+    @include font-properties($font-size: 70px, $color: $brandLogoColor);
+}
