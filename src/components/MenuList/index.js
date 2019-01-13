@@ -15,8 +15,8 @@ const MenuList = ({ menuConfig = [] }) =>
                 route,
                 showDivider
             }) =>
-                <ListItem>
-                    <ListItemLink href={route} id={id} title={title} divider={showDivider}>
+                <ListItem key={id}>
+                    <ListItemLink href={route} title={title} divider={showDivider}>
                         <h2 className="title">{title}</h2>
                         <p className="description">{subTitle}</p>
                     </ListItemLink>

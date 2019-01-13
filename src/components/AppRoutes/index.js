@@ -17,8 +17,8 @@ const AppRoutes = ({ menuConfig = [] }) =>
                 subTitle,
                 route,
                 component
-            }, index) =>
-                <Route id={index} path={route} component={() => MenuHOC(MENU_MAPPING[component], {id, title, subTitle})} />
+            }) =>
+                <Route key={id} path={route} component={() => MenuHOC(MENU_MAPPING[component], {title, subTitle})} />
             )
         }
         <Route component={NoMatch} />
