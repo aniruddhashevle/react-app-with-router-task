@@ -4,3 +4,11 @@
 2. React Router - [react-router](https://github.com/ReactTraining/react-router)
 3. React - Material Design Lite - [React-MDL](https://github.com/tleunen/react-mdl)
 4. SASS - CSS Preprocessor
+
+
+## How to run the app
+1. To start the App:
+`npm i && npm start`
+
+2. To run tests:
+`npm run test`
