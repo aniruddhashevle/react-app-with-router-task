@@ -1,38 +1,11 @@
-import React, { Component } from 'react';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import React from 'react';
 import './app.scss';
+import AppRoutes from '../AppRoutes';
+import { HOME_MENUS } from '../../config/home-menus';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        {/* Uses a header that scrolls with the text, rather than staying locked at the top */}
-        <div className="demo-big-content">
-          <Layout>
-            <Header title="Title" scroll>
-              <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-              </Navigation>
-            </Header>
-            <Drawer title="Title">
-              <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-              </Navigation>
-            </Drawer>
-            <Content>
-              <div className="page-content" />
-            </Content>
-          </Layout>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default App;
+const App = () =>
+  <div className="app">
+    <AppRoutes menuConfig={HOME_MENUS}/>
+  </div>
+  
+export default App
