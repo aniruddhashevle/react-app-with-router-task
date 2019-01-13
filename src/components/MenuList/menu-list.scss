@@ -7,7 +7,7 @@
     .menu-list li {
         a {
             display: block;
-            padding: 20px 0px;
+            padding: 20px 2px;
             .title {
                 margin: 0 0 20px 0;
                 @include font-properties($font-size: 36px, $color: $brandTitleColor);

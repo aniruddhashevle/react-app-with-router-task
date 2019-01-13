@@ -1,0 +1,26 @@
+@import '../assets/styles/variables.scss';
+@import '../assets/styles/mixins.scss';
+
+.menu-details-wrapper {
+    .card-wrapper {
+        margin-bottom: 30px;
+        &:first-of-type { margin-top: 10px; }
+        &:last-of-type { margin-bottom: 0; }
+        .card-content {
+            .details-title {
+                margin: 5px 0 24px;
+                @include font-properties($font-size: 16px, $color: $brandLogoColor);
+            }
+            .details-data {
+                margin: 0;
+                @include font-properties($font-size: 18px, $line-height: 30px, $color: $blackColor);
+            }
+        }
+        .card-action {
+            justify-content: flex-end;
+            .card-action-button {
+                @include font-properties($font-size: 16px, $color: $brandLogoColor);
+            }
+        }
+    }
+}

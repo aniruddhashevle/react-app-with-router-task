@@ -1,6 +1,11 @@
 import React from 'react';
+import MenuDetailsCards from '../MenuDetailsCards';
+import { CUSTOMER_DETAILS } from '../../config/menu-details';
 
 const Customers = () =>
-    <div>Customers</div>
+    CUSTOMER_DETAILS && CUSTOMER_DETAILS.length &&
+    CUSTOMER_DETAILS.map(item =>
+        <MenuDetailsCards config={item} />
+    )
 
-export default Customers
+export default Customers;
