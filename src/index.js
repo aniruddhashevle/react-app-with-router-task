@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
-import './index.scss';
+import './components/assets/styles/main.scss';
 
 ReactDOM.render(
     <BrowserRouter>
