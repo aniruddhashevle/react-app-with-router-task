@@ -67,17 +67,3 @@
     letter-spacing: $letter-spacing;
     color: $color;
 }
-
-
-/*================================================================
-  2. butyon
-==================================================================*/
-@mixin common-btn($bgColor: $brand-blue, $color: $white ) {
-    height: 40px;
-    border: none;
-    border-radius: 26px;
-    outline: none;
-    background-color: $bgColor;
-    color: $color; 
-    cursor: pointer;
-}
